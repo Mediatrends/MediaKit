@@ -1,0 +1,84 @@
+.container{
+	@extend .text-center;
+	@include gridle_container();
+	@include gridle_centered();
+	max-width:1170px;
+	font:{
+		family:$font_francois;
+	}
+	.row{
+		@include gridle_parent();
+		.logo_mediatrends{
+			@include gridle(6);
+			@include gridle_push(3);
+			margin-top: 15%;
+			.img_logo{
+				@include gridle(6);
+				@extend .text-right;
+			}
+			.text-tit{
+				@include gridle(6);
+				h1{
+					@extend .text-left;
+					line-height: 15px;
+					margin-top:60px; 
+					font: {
+						size:30px;
+					}
+					span{
+						@include gridle_clear('both');
+						font:{
+							size: 15px;
+						}
+					}
+				}
+			}
+		}
+		.form_access{
+			@extend .logo_mediatrends;
+			margin-top: 5%;
+			.user_row{
+				@include gridle_parent();
+				margin-bottom:10px;
+				label{
+					@include gridle(4);
+					@extend .text-right;
+				}
+				input{
+					@include gridle(4);
+					height: 32px;
+					border:none;
+					border-bottom: 5px solid #eee;
+					border-right: 5px solid #eee;
+					background: {
+						color:#ddd;
+					}
+				}
+			}
+			.pass_row{
+				@extend .user_row;
+			}
+			.btn_enter{
+				@include gridle(3);
+				@include gridle_push(4);
+				color: #fff;
+				height: 40px;
+				cursor: pointer;
+				border:none;
+				border-bottom: 5px solid #FF2225;
+				border-right: 5px solid #FF2225;
+				background: {
+					color:#EB2025;
+				}
+				font:{
+					size:20px;
+					family: $font_francois;
+					weight:100;
+				}
+				text:{
+					transform: uppercase;
+				}
+			}
+		}
+	}
+}
