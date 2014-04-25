@@ -1,8 +1,6 @@
-.container{
+.container_log{
 	@extend .text-center;
-	@include gridle_container();
-	@include gridle_centered();
-	max-width:1170px;
+	@extend .content;
 	font:{
 		family:$font_francois;
 	}

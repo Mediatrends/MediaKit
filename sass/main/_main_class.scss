@@ -15,3 +15,17 @@
 .margins{
 	margin:0 !important;
 }
+
+//Responsive img
+.responsive-img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+
+//Container set
+.content{
+	@include gridle_container();
+	@include gridle_centered();
+	max-width:1170px;
+}

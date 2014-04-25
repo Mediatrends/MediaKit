@@ -1,0 +1,13 @@
+.container_cat{
+	@extend .content;
+	.header{
+		@include gridle(12);
+		.logo{
+			@include gridle(1);
+			svg{
+				width:100%;
+				position: relative;
+			}
+		}
+	}
+}
