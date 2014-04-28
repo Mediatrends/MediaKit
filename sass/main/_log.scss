@@ -63,10 +63,10 @@
 				height: 40px;
 				cursor: pointer;
 				border:none;
-				border-bottom: 5px solid #FF2225;
-				border-right: 5px solid #FF2225;
+				border-bottom: 5px solid $sec_color;
+				border-right: 5px solid $sec_color;
 				background: {
-					color:#EB2025;
+					color:$pri_color;
 				}
 				font:{
 					size:20px;

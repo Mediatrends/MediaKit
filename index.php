@@ -13,5 +13,8 @@
 <body>
 	<!--?php include 'login.php' ?-->
 	<?php include 'category.php' ?>
+
+	<!--depd-->
+	<?php include 'svgs.php' ?>
 </body>
 </html>

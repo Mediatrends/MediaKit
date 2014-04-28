@@ -16,6 +16,16 @@
 	margin:0 !important;
 }
 
+//hidden visible
+.visible{
+	visibility:$visible;
+}
+.hidden{
+	visibility:$hidden;
+}
+.hide{
+	display:$hide;
+}
 //Responsive img
 .responsive-img{
 	display:block;
@@ -23,6 +33,15 @@
 	height:auto;
 }
 
+//Menu inline
+.inline{
+	list-style:none;
+	@extend .paddings;
+	@extend .margins;
+	li{
+		display:$inline;
+	}
+}
 //Container set
 .content{
 	@include gridle_container();

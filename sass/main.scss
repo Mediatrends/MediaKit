@@ -2,13 +2,19 @@
 @import "grid-settings";
 // Generate classes :
 @include gridle_generate_classes();
+@import "compass";
+@import "lemonade";
+@import "animation";
 
 //Main
-//_variables
+//_Variables
 @import "main/main_fonts";
 @import "main/main_vars";
 @import "main/main_class";
 
-//Build
+//_Anima
+@import "main/animate";
+
+//_Build
 @import "main/log";
 @import "main/category";

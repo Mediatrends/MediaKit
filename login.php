@@ -3,7 +3,9 @@
 		<div class="logo_mediatrends">
 			
 			<div class="img_logo">
-				<img src="img/logo_mt.gif" alt="">
+				<svg viewBox="0 0 286.083 220.875">
+					<use xlink:href="#svg_logo">
+				</svg>
 			</div>
 			<div class="text-tit">
 				<h1>

@@ -2,12 +2,124 @@
 	@extend .content;
 	.header{
 		@include gridle(12);
+		@include gridle_parent();
+		font:{
+			family:$font_francois;
+		}
 		.logo{
-			@include gridle(1);
+			@include gridle_parent();
+			@include gridle(4);
+			@include gridle(6, 'tablet');
+			@include gridle(12, 'mobile');
 			svg{
-				width:100%;
+				width:100px;
+				max-width: 40%;
 				position: relative;
+				@include gridle_float(left);
+				margin-right:32px;
+			}
+			.text_tit{
+				h1{
+					color: #fff;
+					line-height: 15px;
+					font:{
+						size:30px;
+					}
+					span{
+						font:{
+							size: 15px;
+						}
+					}
+				}
 			}
 		}
+		.nav{
+			@include gridle_parent();
+			@include gridle(12);
+			margin-top: 15px;
+			ul{
+				@extend .inline;
+				a{
+					color:$pri_color;
+					border: none;
+					border-bottom: 5px solid rgba(0 ,0 ,0, 0);
+					border-right: 5px solid rgba(0 ,0 ,0, 0);
+					padding:3px 5px;
+					text:{
+						decoration:none;
+						transform: uppercase;
+					}
+					font:{
+						size:14px;
+					}
+					&:hover{
+						border:none;
+						border-bottom: 5px solid $sec_color;
+						border-right: 5px solid $sec_color;
+						background: {
+							color:$pri_color;
+						}
+						@include animation(fadein 1s ease forwards);
+					}
+				}
+			}
+		}
+	}
+	.tit_cat{
+		@include gridle(12);
+		@include gridle_parent();
+		color: #fff;
+		margin-top: 35px;
+		background: {
+			color:$pri_color;
+		}
+		h2{
+			padding-left:10px;
+			font:{
+				size: 30px;
+				family: $font_francois;
+			}
+			text:{
+				transform: uppercase;
+			}
+			line-height: 30px;
+		}
+	}
+	.cont_sites{
+		@include gridle_parent();
+		.sites{
+			@include gridle(3);
+			@include gridle(6, 'tablet');
+			margin-top: 31px;
+			.site_info{
+				@include gridle(12);
+				@include gridle_centered();
+				background: {
+					color:#fff;
+				}
+				border:1px solid $pri_color;
+				min-height: 242px;
+			}
+		}
+	}
+}
+.bg_cat{
+	position:absolute;
+	max-width: 100%;
+	width:100%;
+	height:384px;
+	top:0;
+	left:0;
+	right:0;
+	background: {
+		color:#f90;
+		position:center;
+		size:cover;
+	}
+	z-index: -9;
+}
+.bg_lifestyle{
+	background: {
+		image:url('#{$url_path}examp_bg.jpg');
 	}
 }
