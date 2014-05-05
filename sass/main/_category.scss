@@ -14,6 +14,8 @@
 			svg{
 				width:100px;
 				max-width: 40%;
+				height: auto;
+				max-height: 100px;
 				position: relative;
 				@include gridle_float(left);
 				margin-right:32px;
@@ -94,11 +96,54 @@
 			.site_info{
 				@include gridle(12);
 				@include gridle_centered();
+				position: relative;
+				overflow: hidden;
 				background: {
 					color:#fff;
 				}
 				border:1px solid $pri_color;
 				min-height: 242px;
+				.cont_logo{
+					position: absolute;
+					display: table;
+					height: 155px;
+					.cont-img{					
+						display: table-cell;
+						vertical-align: middle;
+						img{
+							width:100%;
+						}
+					}
+				}
+				.cont_des{
+					position: absolute;
+					bottom:0;
+					left:0;
+					background:{
+						color:#888;
+					}
+					h3{
+						padding:0 10px;
+						color: #fff;
+						font:{
+							size:14px;
+							family:$font_francois;
+						}
+						line-height: 11px;
+					}
+					p{
+						padding:0 10px;
+						font: {
+							size:11px;
+							family:$font_francois;
+						}
+					}
+					.icon_link{
+						height: 15px;
+						@include gridle_parent();
+						@include gridle_float(right);
+					}	
+				}
 			}
 		}
 	}
