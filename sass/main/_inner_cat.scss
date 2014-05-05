@@ -148,6 +148,44 @@
 				background:{
 					color:$box_color;
 				}
+				height: 129px;
+				.view{
+					@include gridle(4);
+					h4{
+						font:{
+							size:24px;
+							family:$font_francois;
+						}
+						color:#fff;
+						@extend .margins;
+						padding:10px 0;
+					}
+					p{
+						font:{
+							size:50px;
+							family:$font_francois;
+						}
+						margin:10px 0 0 0;
+						@extend .paddings;
+						line-height: 18px;
+						color:#fff;
+						span{
+							font:{
+								size:18px;
+							}
+						}
+					}
+				}
+				.average{
+					@extend .view;
+					@include gridle(8);
+				}
+			}
+		}
+		.rs{
+			@extend .ga;
+			.cont{
+				@include gridle_push(1);
 				h4{
 					font:{
 						size:24px;
@@ -157,16 +195,11 @@
 					@extend .margins;
 					padding:10px 0;
 				}
-			}
-		}
-		.rs{
-			@extend .ga;
-			.cont{
-				@include gridle_push(1);
 				.box_rs{
 					@include gridle(4);
 					@extend .paddings;
 					svg{
+						max-width:58px;
 						max-height: 58px;
 						@include gridle_float(left);
 					}
@@ -187,6 +220,12 @@
 					}
 				}
 			}
+		}
+	}
+	.screen_web{
+		@include gridle(12);
+		img{
+			@extend .responsive-img;
 		}
 	}
 }

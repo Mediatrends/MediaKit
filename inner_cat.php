@@ -53,12 +53,16 @@
 			
 			<div class="cont">
 				
-				<h4>PAGES VIEWS</h4>
-				<p>1000<span>Mensuales</span></p>
-
-				<h4>AVG. SESSION DURATION</h4>
-				<p>00:06:10</p>
-
+				<div class="view">
+					<h4>PAGES VIEWS</h4>
+					<p>1000<br><span>Mensuales</span></p>
+				</div>
+				
+				<div class="average">
+					<h4>AVG. SESSION DURATION</h4>
+					<p>00:06:10</p>
+				</div>
+				
 			</div>
 
 		</div>
@@ -96,4 +100,15 @@
 			</div>
 		</div>
 	</div>
+
+	<h3>zonas</h3>
+
+	<h3>sitio web</h3>
+
+	<div class="screen_web">
+		
+		<img src="img/bg_yq.png" alt="">
+
+	</div>
+
 </div>
