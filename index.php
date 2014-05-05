@@ -11,10 +11,10 @@
 
 </head>
 <body>
-	<!--?php include 'login.php' ?-->
-	<?php include 'category.php' ?>
-
 	<!--depd-->
 	<?php include 'svgs.php' ?>
+
+	<!--?php include 'login.php' ?-->
+	<?php include 'category.php' ?>
 </body>
 </html>

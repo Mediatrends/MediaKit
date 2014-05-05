@@ -34,53 +34,58 @@
 	<div class="cont_sites">
 		<div class="sites">
 			
-			<div class="site_info">
+			<a href="">
+				<div class="site_info">
 				
-				<div class="cont_logo">
-					
-					<div class="cont-img">
-						<img src="img/logo_yq.jpg" alt="">
-					</div>
-
-				</div>
-				<div class="cont_des">
-					
-					<h3>www.the-youtquake.com</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-
-					<div class="icon_link">
+					<div class="cont_logo">
 						
-						<img src="img/link_kit.gif" alt="">
+						<div class="cont-img">
+							<img src="img/logo_yq.jpg" alt="">
+						</div>
 
 					</div>
+					<div class="cont_des">
+						
+						<h3>www.the-youtquake.com</h3>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+
+						<div class="icon_link">
+							
+							<img src="img/link_kit.gif" alt="">
+
+						</div>
+					</div>
 				</div>
-			</div>
+			</a>
+			
 
 		</div>
 		<div class="sites">
-			
-			<div class="site_info">
+			<a href="">
+				<div class="site_info">
 				
-				<div class="cont_logo">
-					
-					<div class="cont-img">
-						<img src="img/logo_list.png" alt="">
-					</div>
-
-				</div>
-				<div class="cont_des">
-					
-					<h3>www.the-youtquake.com</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-					
-					<div class="icon_link">
+					<div class="cont_logo">
 						
-						<img src="img/link_kit.gif" alt="">
+						<div class="cont-img">
+							<img src="img/logo_list.png" alt="">
+						</div>
 
 					</div>
-				</div>
+					<div class="cont_des">
+						
+						<h3>www.the-youtquake.com</h3>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+						
+						<div class="icon_link">
+							
+							<img src="img/link_kit.gif" alt="">
 
-			</div>
+						</div>
+					</div>
+
+				</div>
+			</a>
+			
 
 		</div>
 	</div>

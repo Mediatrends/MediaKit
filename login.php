@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="logo_mediatrends">
 			
-			<div class="img_logo">
+			<div class="img_logo img_logo_webkit">
 				<svg viewBox="0 0 286.083 220.875">
 					<use xlink:href="#svg_logo">
 				</svg>

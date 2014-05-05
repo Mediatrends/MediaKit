@@ -93,56 +93,63 @@
 			@include gridle(3);
 			@include gridle(6, 'tablet');
 			margin-top: 31px;
-			.site_info{
-				@include gridle(12);
-				@include gridle_centered();
-				position: relative;
-				overflow: hidden;
-				background: {
-					color:#fff;
+			a{
+				text:{
+					decoration:none;
 				}
-				border:1px solid $pri_color;
-				min-height: 242px;
-				.cont_logo{
-					position: absolute;
-					display: table;
-					height: 155px;
-					.cont-img{					
-						display: table-cell;
-						vertical-align: middle;
-						img{
-							width:100%;
+				.site_info{
+					@include gridle(12);
+					@include gridle_centered();
+					position: relative;
+					overflow: hidden;
+					background: {
+						color:#fff;
+					}
+					border:1px solid $pri_color;
+					min-height: 242px;
+					@extend .paddings;
+					.cont_logo{
+						display: table;
+						height: 155px;
+						width:100%;
+						.cont-img{					
+							display: table-cell;
+							vertical-align: middle;
+							padding:0 10px;
+							img{
+								width:100%;
+							}
 						}
 					}
-				}
-				.cont_des{
-					position: absolute;
-					bottom:0;
-					left:0;
-					background:{
-						color:#888;
-					}
-					h3{
-						padding:0 10px;
-						color: #fff;
-						font:{
-							size:14px;
-							family:$font_francois;
+					.cont_des{
+						background:{
+							color:#888;
 						}
-						line-height: 11px;
-					}
-					p{
-						padding:0 10px;
-						font: {
-							size:11px;
-							family:$font_francois;
+						padding-top:10px;
+						h3{
+							padding:0 10px;
+							@extend .margins;
+							color: #fff;
+							font:{
+								size:14px;
+								family:$font_francois;
+							}
+							line-height: 11px;
 						}
+						p{
+							padding:0 10px;
+							font: {
+								size:11px;
+								family:$font_francois;
+							}
+							color: #000;
+						}
+						.icon_link{
+							height: 15px;
+							width: 100%;
+							@extend .text-right;
+						}	
 					}
-					.icon_link{
-						height: 15px;
-						@include gridle_parent();
-						@include gridle_float(right);
-					}	
 				}
 			}
 		}

@@ -14,6 +14,11 @@
 				@include gridle(6);
 				@extend .text-right;
 			}
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				.img_logo_webkit{
+					height: 200px;
+				}
+			}
 			.text-tit{
 				@include gridle(6);
 				h1{
