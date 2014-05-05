@@ -92,6 +92,7 @@
 		.sites{
 			@include gridle(3);
 			@include gridle(6, 'tablet');
+			@include gridle(12, 'mobile');
 			margin-top: 31px;
 			a{
 				text:{
@@ -123,7 +124,7 @@
 					}
 					.cont_des{
 						background:{
-							color:#888;
+							color:$box_color;
 						}
 						padding-top:10px;
 						h3{
@@ -164,7 +165,6 @@
 	left:0;
 	right:0;
 	background: {
-		color:#f90;
 		position:center;
 		size:cover;
 	}

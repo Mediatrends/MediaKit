@@ -14,7 +14,6 @@
 	<!--depd-->
 	<?php include 'svgs.php' ?>
 
-	<!--?php include 'login.php' ?-->
-	<?php include 'category.php' ?>
+	<?php include 'inner_cat.php' ?>
 </body>
 </html>
